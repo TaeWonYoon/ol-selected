@@ -98,7 +98,6 @@
             map.forEachFeatureAtPixel(e.pixel, function (f) { //피쳐아이디 호출
                 var selIndex = bnSelected.indexOf(f);
                 if (selIndex < 0) { //등록
-                    console.log('이프탐');
                     bnSelected.push(f);
                     f.setStyle(benefitcialStyle);
                     propsEdit('add', f)
@@ -152,6 +151,7 @@
                         }
                         */                       
                     })
+                    console.log("데이터 param = " + JSON.stringify(param))
                 } else {
 
                 }
