@@ -95,6 +95,7 @@
                     width: 2,
                 }),
             });
+            console.log(e)
             map.forEachFeatureAtPixel(e.pixel, function (f) { //피쳐아이디 호출
                 var selIndex = bnSelected.indexOf(f);
                 if (selIndex < 0) { //등록
